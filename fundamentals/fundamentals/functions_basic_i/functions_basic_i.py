@@ -1,50 +1,48 @@
+
 #1
-def number_of_food_groups():
+def número_de_grupos_alimentarios():
     return 5
-print(number_of_food_groups())
-
-''
+print(número_de_grupos_alimentarios())
+# lo que retorna es 5 ya que en el retorno de la variable "número_de_grupos_alimentarios" es igual a 5 
 #2
-def number_of_military_branches():
+def número_de_ramas_militares():
     return 5
-print(number_of_days_in_a_week_silicon_or_triangle_sides() + number_of_military_branches())
-
-
+print(número_de_días_en_una_semana_silicona_o_lados_del_triángulo() + número_de_ramas_militares())
+# daria error ya que "número_de_días_en_una_semana_silicona_o_lados_del_triángulo" no esta definido previamente en algun arreglo
 #3
-def number_of_books_on_hold():
+def número_de_libros_en_espera():
     return 5
     return 10
-print(number_of_books_on_hold())
-
-
+print(número_de_libros_en_espera())
+# dara como resultado 5 ya que el 2°do return no lo tendra en cuenta al ser una repuesta 2° en una funcion
 #4
-def number_of_fingers():
+def número_de_dedos():
     return 5
     print(10)
-print(number_of_fingers())
-
-
+print(número_de_dedos())
+# imprimira el valor de 5 ya que el print que hay esta dentro de de la funcion "número_de_dedos"
 #5
-def number_of_great_lakes():
+def número_de_lagos_grandes():
     print(5)
-x = number_of_great_lakes()
+x = número_de_lagos_grandes()
 print(x)
-
-
+#lo que imprime es "5" seguido de "none" ya que "print(x)" ya que la variable x no tiene una declaracion de retorno 
 #6
 def add(b,c):
     print(b+c)
 print(add(1,2) + add(2,3))
-
+# dara los resultados de 1+2 y 2+3 y luego dara un TyoeError ya  que no podemos sumar 2 funciones que no retornan ningun valor
 
 #7
-def concatenate(b,c):
+def concatenar(b,c):
     return str(b)+str(c)
-print(concatenate(2,5))
+="función de soporte python from-rainbow">print(concatenar(2,5))
+
+#esta dara error porque esta mal la sintaxis de este fragmento de codigo
 
 
 #8
-def number_of_oceans_or_fingers_or_continents():
+def número_de_océanos_o_dedos_o_continentes():
     b = 100
     print(b)
     if b < 10:
@@ -52,81 +50,5 @@ def number_of_oceans_or_fingers_or_continents():
     else:
         return 10
     return 7
-print(number_of_oceans_or_fingers_or_continents())
-
-
-#9
-def number_of_days_in_a_week_silicon_or_triangle_sides(b,c):
-    if b<c:
-        return 7
-    else:
-        return 14
-    return 3
-print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3))
-print(number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
-print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
-
-
-#10
-def addition(b,c):
-    return b+c
-    return 10
-print(addition(3,5))
-
-
-#11
-b = 500
-print(b)
-def foobar():
-    b = 300
-    print(b)
-print(b)
-foobar()
-print(b)
-
-
-#12
-b = 500
-print(b)
-def foobar():
-    b = 300
-    print(b)
-    return b
-print(b)
-foobar()
-print(b)
-
-
-#13
-b = 500
-print(b)
-def foobar():
-    b = 300
-    print(b)
-    return b
-print(b)
-b=foobar()
-print(b)
-
-
-#14
-def foo():
-    print(1)
-    bar()
-    print(2)
-def bar():
-    print(3)
-foo()
-
-
-#15
-def foo():
-    print(1)
-    x = bar()
-    print(x)
-    return 10
-def bar():
-    print(3)
-    return 5
-y = foo()
-print(y)
+print(número_de_oceános_o_dedos_o_continentes())
+ #no imprimira nada ya que "número_de_oceános_o_dedos_o_continentes" no es lo mismo que "número_de_océanos_o_dedos_o_continentes" y al no estar bien definido da un error de nombre
