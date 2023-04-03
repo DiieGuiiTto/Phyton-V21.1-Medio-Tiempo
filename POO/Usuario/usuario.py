@@ -15,12 +15,9 @@ class Usuario:
         print(f"Mi saldo es: {self.balance_cuenta}")
 
 
-
 devid = Usuario("David" , "david@gmail.com" ,"ponce")
 diego = Usuario("Diego" ,"diego@gmail.com" ,"iturra")
 dojo =Usuario("Coding" , "coding@dojo.cl" ,"dojo")
-
-
 
 
 diego.hacer_depósito(10000)
