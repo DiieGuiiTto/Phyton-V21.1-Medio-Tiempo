@@ -1,18 +1,15 @@
-class Usuario:		# esto es lo que tenemos hasta ahora
+class Usuario:		
     def __init__(self, name, email, apellido):
         self.name = name
         self.email = email
         self.apellido = apellido
         self.balance_cuenta = 0
-    # agregando el método de depósito
 
-    def hacer_depósito(self, monto):  # toma un argumento que es el monto del depósito
+    def hacer_depósito(self, monto): 
         self.balance_cuenta += monto
 
-    def hacer_giro(self, monto):  # toma un argumento que es el monto del depósito
-        # la cuenta del usuario específico aumenta en la cantidad del valor recibido
+    def hacer_giro(self, monto):  
         self.balance_cuenta -= monto
-        # la cuenta del usuario específico aumenta en la cantidad del valor recibido
 
     def mostrar_saldo(self):
         print(f"Mi saldo es: {self.balance_cuenta}")
