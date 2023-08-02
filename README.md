@@ -1,4 +1,6 @@
 # Phyton-V21.1-Medio-Tiempo
+## tips python
+Para ver lo que tengo instalado en python `pip list`
 
 ## PARA TRABAJAR CON ENTORNO VIRTUALES EN FLASK:
 

@@ -3,7 +3,6 @@ app = Flask(__name__)
 @app.route('/')          
 def hola_mundo():
     return 'Hola Mundo!'
-
     
 @app.route('/dojo')
 def dojo():
@@ -12,18 +11,21 @@ def dojo():
 
 @app.route('/hola/<name>') # para una ruta '/hola /____' cualquier cosa después de que '/hola/' se pase como una variable 'name'
 def hola(name):
-    print(name)
-    return "Hola, " + name
+    return f"Hola mundo saluda {name}"
 
 
 
-@app.route('/repeat/num:int/<name>:string') # para una ruta '/users/____/____', dos parámetros en la url se pasan como nombre de usuario e id
-def show_user_profile(repeat, num):
-    print(username)
-    print(id)
-    return "username: " + username + ", id: " + id
+@app.route('/repetir/<int:num>/<string:palabra>') # para una ruta '/users/____/____', dos parámetros en la url se pasan como nombre de usuario e id
+def show_user_profile(num, palabra):
+    salida = ''
+    for i in range(0,num):
+        salida += f"<p>{palabra}</p>"
 
+    return salida
 
+@app.errorhandler(404)
+def error_pagina(error):
+    return f"wowww no existe la página"
 
 
 
