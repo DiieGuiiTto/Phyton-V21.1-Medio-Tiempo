@@ -2,4 +2,4 @@
 
 ## PARA TRABAJAR CON ENTORNO VIRTUALES EN FLASK:
 
-1. instalar pipenv 'pip install pipenv'
+1. instalar pipenv ´pip install pipenv´
